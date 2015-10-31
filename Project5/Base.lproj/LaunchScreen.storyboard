@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrabble.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iR8-Lw-7Uw">
+                                <rect key="frame" x="181" y="97" width="238" height="267"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="2GU-GG-X0e">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="520"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrabble" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0q-Rn-Vmf">
+                                <rect key="frame" x="217" y="28" width="166" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="C65-CV-E4Z"/>
+                                    <constraint firstAttribute="width" constant="166" id="y5W-Vi-DVO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="y5W-Vi-DVO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="y5W-Vi-DVO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="C65-CV-E4Z"/>
+                                        <exclude reference="y5W-Vi-DVO"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="2qH-Qe-iIq"/>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="5vv-hc-n1l"/>
+                            <constraint firstItem="iR8-Lw-7Uw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7cB-Mt-s7M">
+                                <variation key="heightClass=regular-widthClass=regular" constant="23"/>
+                            </constraint>
+                            <constraint firstItem="iR8-Lw-7Uw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="77" id="AG7-pD-GVh"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iR8-Lw-7Uw" secondAttribute="bottom" constant="236" id="Qnd-pf-nqA">
+                                <variation key="heightClass=compact-widthClass=compact" constant="86"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="c0q-Rn-Vmf" secondAttribute="trailing" constant="-3" id="mld-Z2-h6f"/>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="centerX" secondItem="iR8-Lw-7Uw" secondAttribute="centerX" id="nHD-RU-XbQ"/>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="rYl-4n-IFv"/>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-3" id="sCY-oh-Ht4"/>
+                            <constraint firstItem="c0q-Rn-Vmf" firstAttribute="centerX" secondItem="iR8-Lw-7Uw" secondAttribute="centerX" id="utx-fY-ZnV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-23"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2qH-Qe-iIq"/>
+                                <exclude reference="mld-Z2-h6f"/>
+                                <exclude reference="nHD-RU-XbQ"/>
+                                <exclude reference="rYl-4n-IFv"/>
+                                <exclude reference="sCY-oh-Ht4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2qH-Qe-iIq"/>
+                                <include reference="mld-Z2-h6f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="2qH-Qe-iIq"/>
+                                <exclude reference="5vv-hc-n1l"/>
+                                <exclude reference="mld-Z2-h6f"/>
+                                <include reference="nHD-RU-XbQ"/>
+                                <include reference="rYl-4n-IFv"/>
+                                <include reference="sCY-oh-Ht4"/>
+                                <exclude reference="utx-fY-ZnV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scrabble.jpg" width="500" height="333"/>
+    </resources>
+</document>
